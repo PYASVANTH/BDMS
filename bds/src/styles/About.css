@@ -1,0 +1,128 @@
+/* About Page Container */
+.about-container {
+    background: linear-gradient(135deg, #ffcccc, #ffe6e6);
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* About Header */
+  .about-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-header h1 {
+    font-size: 3rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* About Content */
+  .about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  /* Text Section */
+  .about-text {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Info Section */
+  .about-info {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .about-info h2 {
+    font-size: 1.8rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+  }
+  
+  .about-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .about-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    background-color: #fff;
+    color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-text, .about-info {
+      max-width: 90%;
+    }
+  }
+  

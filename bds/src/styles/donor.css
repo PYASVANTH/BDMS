@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  
+  /* Form Styles */
+  .add-request-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-request-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-request-form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .add-request-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-request-form button:hover {
+    background-color: #357ab7;
+  }
+  
+  .request-list {
+    margin-top: 40px;
+  }
+  
+  .request-list ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .request-list li {
+    background-color: #f4f7fc;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .request-list li strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .request-list li span {
+    color: #4a90e2;
+    font-weight: 500;
+  }
+  
+  .request-list li:hover {
+    background-color: #eaf0f7;
+  }
+  
+  @media (max-width: 768px) {
+    .app-container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .add-request-form input,
+    .add-request-form button {
+      font-size: 0.9rem;
+    }
+  
+    .request-list li {
+      padding: 12px;
+    }
+  }
+  

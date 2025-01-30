@@ -1,0 +1,124 @@
+/* Availability.css */
+
+.availability-container {
+  width: 70%;
+  margin: 30px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.availability-container:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.blood-symbol {
+  font-size: 3rem;
+  color: #e60000; /* Blood red color */
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.availability-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.availability-table th,
+.availability-table td {
+  padding: 18px 20px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.availability-table th {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.availability-table td {
+  background-color: #f9f9f9;
+}
+
+.availability-table tr:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.availability-table tr:nth-child(even) td {
+  background-color: #f4f4f4;
+}
+
+.availability-table tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+
+.availability-table td {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.availability-table th,
+.availability-table td {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .availability-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .availability-table th,
+  .availability-table td {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
