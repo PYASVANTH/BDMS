@@ -30,7 +30,7 @@ const RecipientRequest = () => {
     setSuccessMessage("");
 
     try {
-      const response = await axios.post("http://localhost:3000/api/recipient", {
+      const response = await axios.post("https://bdms-igj8.onrender.com/api/recipient", {
         name: formData.name,
         bloodGroup: formData.bloodGroup,
         location: formData.location,
