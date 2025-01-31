@@ -4,7 +4,8 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-import "../src/styles/RecepientRequest.css";
+import '../src/styles/RecepientRequest.css';
+
 
 const RecipientRequest = () => {
   const [formData, setFormData] = useState({
