@@ -26,7 +26,7 @@ const Register = ({ setIsRegistering, setIsLoggedIn }) => {
     const { name, email, password } = registerFormData;
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users/register", {
+      const response = await axios.post("https://bdms-igj8.onrender.com/api/users/register", {
         name,
         email,
         password,

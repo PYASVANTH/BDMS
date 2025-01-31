@@ -17,7 +17,7 @@
 //   // Fetch availability data from the backend
 //   const fetchAvailability = async () => {
 //     try {
-//       const response = await axios.get("http://localhost:5000/api/availability");
+//       const response = await axios.get("https://bdms-igj8.onrender.com/api/availability");
 //       setBloodData(response.data.availability); // Assume the backend sends `{ availability: [...] }`
 //     } catch (error) {
 //       console.error("Error fetching availability data:", error.message);
@@ -76,7 +76,7 @@ const Availability = () => {
   // Fetch availability data from the backend
   const fetchAvailability = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/availability");
+      const response = await axios.get("https://bdms-igj8.onrender.com/api/availability");
       if (response.data.success) {
         setBloodData(response.data.availability);
       }

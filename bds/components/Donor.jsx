@@ -19,7 +19,7 @@ const Donor = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/donations", {
+      const response = await axios.post("https://bdms-igj8.onrender.com/api/donations", {
         name: formData.name,
         bloodGroup: formData.bloodGroup,
         location: formData.location,
@@ -34,7 +34,7 @@ const Donor = () => {
 
         // Optional: Update availability
         const availabilityResponse = await axios.get(
-          "http://localhost:5000/api/availability"
+          "https://bdms-igj8.onrender.com/api/availability"
         );
         console.log("Updated Availability:", availabilityResponse.data);
       } else {
