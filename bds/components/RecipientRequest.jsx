@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-import '../src/styles/RecepientRequest.css';
+import '../src/components/recipientrequest.css';
 
 
 const RecipientRequest = () => {
