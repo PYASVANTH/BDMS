@@ -20,7 +20,7 @@ const Login = ({ setIsRegistering, setIsLoggedIn }) => {
     const { email, password } = loginFormData;
 
     try {
-      const response = await axios.post("http://localhost:3000/api/users/login", {
+      const response = await axios.post("https://bdms-igj8.onrender.com/api/users/login", {
         email,
         password,
       });
